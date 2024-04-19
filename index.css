@@ -6,6 +6,79 @@
   width: 100vw;
   box-sizing: border-box;
 }
+
+.mumchan-main .header {
+  background: #FFFFFF;
+  position: relative;
+  margin-bottom: 0.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 33px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1800px;
+  min-width: 320px;
+  justify-content: center;
+}
+
+.mumchan-main .strap {
+  background: #000000;
+  width: 100%;
+  height: 40px;
+}
+
+.mumchan-main .header-container {
+  margin: 0 83px 33px 63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 808px;
+  box-sizing: border-box;
+}
+
+.mumchan-main .head-logo {
+  background: #000000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0.9px 30px 0;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.mumchan-main .logo-mumchan {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 40px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.mumchan-main .small-logo {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  translate: -50% 0;
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.mumchan-main .logo-mumchan,
+.mumchan-main .small-logo {
+  text-align: center;
+  width: 100%;
+  color: #FFFFFF;
+}
+
 .mumchan-main .login-sign-up {
   margin: 45px 0px 34px 0px;
   display: inline-block;
@@ -15,6 +88,30 @@
   font-size: var(--poppin-14-font-size, 14px);
   color: #000000;
 }
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.search-container input[type="search"] {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+.mumchan-main .navigation {
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .mumchan-main .nav-menu {
   margin: 0 0 17px 15.5px;
   display: flex;
@@ -23,6 +120,37 @@
   width: 1087.5px;
   box-sizing: border-box;
 }
+
+.mumchan-main .line-02 {
+  background: #000000;
+  margin-bottom: 16.5px;
+  width: 100%;
+  height: 1px;
+}
+
+.mumchan-main .line-01 {
+  background: #000000;
+  width: 100%;
+  height: 1px;
+}
+
+.mumchan-main .home {
+  
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 20px;
+  color: #AB2D2D;
+}
+
+.mumchan-main .best-recipes {
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+}
+
 .mumchan-main .korean-recipes {
   overflow-wrap: break-word;
   font-family: 'Poppins';
@@ -44,22 +172,55 @@
   font-size: 20px;
   color: #000000;
 }
-.mumchan-main .best-recipes {
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 20px;
+
+
+.mumchan-main .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #000000;
+  width: 100%;
+}
+
+.mumchan-main .hero-image {
+  background: url('images/head-image.png') center center / cover no-repeat;
+  width: 1200px;
+  height: calc(50vh - 100px);
+  margin: -200px 550px 150px 550px;
+  background-color: #000000;
+  align-self: center;
+}
+
+
+
+.mumchan-main .hero-text {
+  background-color: #FFFFFF;
+  padding: 10px 10px 250px;
+  flex: 0 0 100px;
+  align-self: center;
+  width: 100%;
+}
+
+.mumchan-main .hero-text h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
   color: #000000;
+  margin: 0;
+  padding: 80px 0px 0px 0px;
+  text-align: center;
 }
-.mumchan-main .home {
-  margin-right: 15px;
-  width: 161px;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 20px;
-  color: #AB2D2D;
+
+.mumchan-main .hero-text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  padding: 0.3em 0;
+  text-align: center;
 }
+
 
 
 
@@ -95,7 +256,6 @@
 
 .mumchan-main .container-recipe-title {
   margin: 30px 0;
-
   overflow-wrap: break-word;
   font-family: 'Poppins';
   font-weight: 400;
@@ -104,7 +264,7 @@
 }
 
 .mumchan-main .our-best-recipe {
-  margin-right: 18px;
+  margin-right: 1000px;
   width: 1057px;
   overflow-wrap: break-word;
   font-family: var(--poppin-24-bold-font-family, 'Poppins');
@@ -146,14 +306,13 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
   padding: 20px 0;
   
 }
 
 .menu-card {
   width: 200px;
-  /* Total card width */
   height: 330px;
   /* Total card height */
   background: #FFFFFF;
@@ -163,33 +322,53 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .menu-image {
   width: 180px;
-  /* Width for the image area, including whitespace */
   height: 200px;
-  /* Adjust height as needed */
   background-size: cover;
   background-position: center;
-  margin-bottom: 10px;
-  /* Space between image and content */
+  margin-bottom: 5px;
 }
 
+
+
 .card-content {
-  padding: 10px;
+  padding: 10px 0 10px 0px;
   text-align: center;
-  /* Center the text */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
+  justify-content: flex-start;
 }
 
 .menu-name {
+margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+  /* Space between name and rating */
+}
+.menu-number {
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: 'Poppins';
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 5px;
-  /* Space between name and rating */
+  color: #000000;
+  /* 숫자 색상 지정 */
 }
 
 .rating {
@@ -201,1148 +380,9 @@
 /*여기까지*/
 
 
-.mumchan-main .rectangle-16 {
-  background: url('../assets/images/rectangle16.jpeg') 50% / cover no-repeat;
-  margin-bottom: 8px;
-  width: 160px;
-  height: 200px;
-}
-.mumchan-main .title {
-  border-radius: 0.4px;
-  margin-left: 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.dakgangjung {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.333;
-}
-.mumchan-main .dakgangjung {
-  margin-bottom: 26px;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .group-45 {
-  border-radius: 0.4px;
-  margin-right: 0.4px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .group-44 {
-  border-radius: 0.4px;
-  margin-right: 1.4px;
-  display: flex;
-  flex-direction: row;
-  width: 70px;
-  box-sizing: border-box;
-}
-
-.mumchan-main .container {
-  margin: 1px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 8px;
-  color: #000000;
-}
-
-.mumchan-main .rectangle-17 {
-  background: url('../assets/images/rectangle171.jpeg') 50% / cover no-repeat;
-  margin-bottom: 8px;
-  width: 160px;
-  height: 200px;
-}
-.mumchan-main .title-1 {
-  border-radius: 0.4px;
-  margin-left: 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.galbitang {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.333;
-}
-.mumchan-main .galbitang {
-  margin-bottom: 26px;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .group-451 {
-  border-radius: 0.4px;
-  margin: 0 15.6px 0 15.2px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .group-441 {
-  border-radius: 0.4px;
-  margin-right: 1.4px;
-  display: flex;
-  flex-direction: row;
-  width: 70px;
-  box-sizing: border-box;
-}
-
-
-.mumchan-main .menu-cards {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-}
-.mumchan-main .menu-card-01 {
-  background: #FFFFFF;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 16px 19.9px 12px 20px;
-  box-sizing: border-box;
-}
-.mumchan-main .image {
-  background: url('../assets/images/image.jpeg') 50% / cover no-repeat;
-  margin: 0 0.1px 8px 0;
-  width: 160px;
-  height: 200px;
-}
-.mumchan-main .title-2 {
-  border-radius: 0.4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.jjajangmyun {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.333;
-}
-
-.rating {
-  color: #e0a800;
-  font-size: 0.8rem;
-}
-.mumchan-main .jjajangmyun {
-  margin-bottom: 26px;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .group-452 {
-  border-radius: 0.4px;
-  margin-right: 0.4px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .group-442 {
-  border-radius: 0.4px;
-  margin-right: 1.4px;
-  display: flex;
-  flex-direction: row;
-  width: 70px;
-  box-sizing: border-box;
-}
-
-.mumchan-main .container-2 {
-  margin: 1px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 8px;
-  color: #000000;
-}
-
-.mumchan-main .rectangle-171 {
-  background: url('../assets/images/rectangle17.jpeg') 50% / cover no-repeat;
-  margin-bottom: 8px;
-  width: 160px;
-  height: 200px;
-}
-.mumchan-main .title-3 {
-  border-radius: 0.4px;
-  margin-left: 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.manduguk {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.333;
-}
-.mumchan-main .manduguk {
-  margin-bottom: 26px;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .group-453 {
-  border-radius: 0.4px;
-  margin-right: 0.4px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .group-443 {
-  border-radius: 0.4px;
-  margin-right: 1.4px;
-  display: flex;
-  flex-direction: row;
-  width: 70px;
-  box-sizing: border-box;
-}
-
-.mumchan-main .container-3 {
-  margin: 1px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 8px;
-  color: #000000;
-}
-
-.mumchan-main .rectangle-18 {
-  background: url('../assets/images/rectangle18.jpeg') 50% / cover no-repeat;
-  margin-bottom: 8px;
-  width: 160px;
-  height: 200px;
-}
-.mumchan-main .title-4 {
-  border-radius: 0.4px;
-  margin-left: 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.bibimbap {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.333;
-}
-.mumchan-main .bibimbap {
-  margin-bottom: 26px;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .group-454 {
-  border-radius: 0.4px;
-  margin: 0 14.6px 0 14.2px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .group-444 {
-  border-radius: 0.4px;
-  margin-right: 1.4px;
-  display: flex;
-  flex-direction: row;
-  width: 70px;
-  box-sizing: border-box;
-}
-
-
-
-.mumchan-main .rectangle-19 {
-  background: url('../assets/images/rectangle191.jpeg') 50% / cover no-repeat;
-  margin-bottom: 8px;
-  width: 160px;
-  height: 200px;
-}
-.mumchan-main .title-5 {
-  border-radius: 0.4px;
-  margin-left: 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .yukgaejang {
-  margin-bottom: 26px;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 16px;
-  color: #000000;
-}
-.yukgaejang {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.333;
-}
-.mumchan-main .group-455 {
-  border-radius: 0.4px;
-  margin-right: 0.4px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .group-445 {
-  border-radius: 0.4px;
-  margin-right: 1.4px;
-  display: flex;
-  flex-direction: row;
-  width: 70px;
-  box-sizing: border-box;
-}
-
-
-
-.mumchan-main .rectangle-20 {
-  background: url('../assets/images/rectangle201.jpeg') 50% / cover no-repeat;
-  margin-bottom: 8px;
-  width: 160px;
-  height: 200px;
-}
-.mumchan-main .title-6 {
-  border-radius: 0.4px;
-  margin-left: 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.dakgalbi {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.333;
-}
-.mumchan-main .dakgalbi {
-  margin-bottom: 26px;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .group-456 {
-  border-radius: 0.4px;
-  margin: 0 11.3px 0 11px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .group-446 {
-  border-radius: 0.4px;
-  margin-right: 1.4px;
-  display: flex;
-  flex-direction: row;
-  width: 70px;
-  box-sizing: border-box;
-}
-.mumchan-main .star-16 {
-  border-radius: 0.4px;
-  width: 14px;
-  height: 14px;
-}
-
-
-
-
-
-
-.mumchan-main .rectangle-161 {
-  background: url('../assets/images/rectangle16.jpeg') 50% / cover no-repeat;
-  margin-bottom: 8px;
-  width: 160px;
-  height: 200px;
-}
-.mumchan-main .title-7 {
-  border-radius: 0.4px;
-  margin-left: 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.dakgangjung-1 {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.333;
-}
-.mumchan-main .dakgangjung-1 {
-  margin-bottom: 26px;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .group-457 {
-  border-radius: 0.4px;
-  margin-right: 0.4px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .group-447 {
-  border-radius: 0.4px;
-  margin-right: 1.4px;
-  display: flex;
-  flex-direction: row;
-  width: 70px;
-  box-sizing: border-box;
-}
-
-.mumchan-main .container-7 {
-  margin: 1px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 8px;
-  color: #000000;
-}
-.mumchan-main .rectangle-30 {
-  background: #D9D9D9;
-  margin-right: 56px;
-  width: 18px;
-  height: 16px;
-}
-
-.mumchan-main .rectangle-172 {
-  background: url('../assets/images/rectangle171.jpeg') 50% / cover no-repeat;
-  margin-bottom: 8px;
-  width: 160px;
-  height: 200px;
-}
-.mumchan-main .title-8 {
-  border-radius: 0.4px;
-  margin-left: 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.galbitang-1 {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.333;
-}
-.mumchan-main .galbitang-1 {
-  margin-bottom: 26px;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .group-458 {
-  border-radius: 0.4px;
-  margin: 0 15.6px 0 15.2px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .group-448 {
-  border-radius: 0.4px;
-  margin-right: 1.4px;
-  display: flex;
-  flex-direction: row;
-  width: 70px;
-  box-sizing: border-box;
-}
-
-.mumchan-main .container-8 {
-  margin: 1px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 8px;
-  color: #000000;
-}
-
-.mumchan-main .rectangle-181 {
-  background: url('../assets/images/rectangle181.jpeg') 50% / cover no-repeat;
-  margin-bottom: 8px;
-  width: 160px;
-  height: 200px;
-}
-.mumchan-main .title-9 {
-  border-radius: 0.4px;
-  margin-left: 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.kimchi-jjigae-sub2 {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.333;
-}
-.mumchan-main .kimchi-jjigae {
-  margin-bottom: 8px;
-  text-align: center;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 12px;
-  color: #000000;
-}
-.mumchan-main .group-459 {
-  border-radius: 0.4px;
-  margin: 0 11.9px 0 11.5px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .group-449 {
-  border-radius: 0.4px;
-  margin-right: 1.4px;
-  display: flex;
-  flex-direction: row;
-  width: 70px;
-  box-sizing: border-box;
-}
-
-.mumchan-main .container-9 {
-  margin: 1px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 8px;
-  color: #000000;
-}
-
-.mumchan-main .rectangle-191 {
-  background: url('../assets/images/rectangle19.jpeg') 50% / cover no-repeat;
-  margin-bottom: 8px;
-  width: 160px;
-  height: 200px;
-}
-.mumchan-main .title-10 {
-  border-radius: 0.4px;
-  margin-left: 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.jeyuk-bokkeum {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.333;
-}
-.mumchan-main .jeyuk-bokkeum {
-  margin-bottom: 8px;
-  text-align: center;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .group-4510 {
-  border-radius: 0.4px;
-  margin-right: 0.4px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .group-4410 {
-  border-radius: 0.4px;
-  margin-right: 1.4px;
-  display: flex;
-  flex-direction: row;
-  width: 70px;
-  box-sizing: border-box;
-}
-
-.mumchan-main .container-10 {
-  margin: 1px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 8px;
-  color: #000000;
-}
-.mumchan-main .menu-card-10 {
-  background: #FFFFFF;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px 20px 12px 20px;
-  width: 200px;
-  box-sizing: border-box;
-}
-.mumchan-main .rectangle-201 {
-  background: url('../assets/images/rectangle20.jpeg') 50% / cover no-repeat;
-  margin-bottom: 8px;
-  width: 160px;
-  height: 200px;
-}
-.mumchan-main .title-11 {
-  border-radius: 0.4px;
-  margin-left: 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .seolleongtang {
-  margin-bottom: 8px;
-  text-align: center;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 16px;
-  color: #000000;
-}
-.seolleongtang {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.333;
-}
-.mumchan-main .group-4511 {
-  border-radius: 0.4px;
-  margin: 0 16.4px 0 16.1px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .group-4411 {
-  border-radius: 0.4px;
-  margin-right: 1.4px;
-  display: flex;
-  flex-direction: row;
-  width: 70px;
-  box-sizing: border-box;
-}
-
-.mumchan-main .container-11 {
-  margin: 1px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 8px;
-  color: #000000;
-}
-
-
-
-
-
-.search-container {
-  display: flex;
-  /* flexbox를 사용하여 아이템들을 정렬합니다. */
-  justify-content: center;
-  /* 가로축에서 중앙 정렬을 합니다. */
-  align-items: center;
-  /* 세로축에서 중앙 정렬을 합니다. */
-  margin-top: 20px;
-  width: 100%;
-}
-
-.search-container input[type="search"] {
-  width: 50%;
-  padding: 8px;
-  border: 1px solid #ccc;
-}
-
-
-
-
-.mumchan-main .strap {
-  background: #000000;
-  width: 200%;
-  height: 40px;
-  
-  
-}
-.mumchan-main .head-logo {
-  background: #000000;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0.9px 30px 0;
-  width: 300px;
-  box-sizing: border-box;
-}
-.mumchan-main .mumchan {
-  position: relative;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 800;
-  font-size: 40px;
-  color: #FFFFFF;
-  text-align: center;
-}
-.mumchan-main .best-korean-recipes {
-  position: absolute;
-  left: 50%;
-  bottom: 16px;
-  translate: -50% 0;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.mumchan-main .mumchan,
-.mumchan-main .best-korean-recipes {
-  text-align: center;
-  width: 100%;
-  color: #FFFFFF;
-}
-
-
-.mumchan-main .korean-cuisine-at-your-fingertips {
-  position: relative;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 600;
-  font-size: 40px;
-  color: #000000;
-  margin-bottom: 20px;
-}
-.mumchan-main .embark-on-agastronomic-journey-with-our-handpicked-recipes {
-  position: absolute;
-  left: 50%;
-  bottom: 0px;
-  translate: -30% 0;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 24px;
-  color: #000000;
-  margin-top: 20px;
-  white-space: nowrap;
-  
-}
-
-
-.mumchan-main .hero-image {
-  background: url('images/head-image.png') center center / cover no-repeat;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -200px;
-  width: 1049px;
-  height: 698px;
-  z-index: 2;
-}
-
-.mumchan-main .bg {
-  background: #000000;
-  position: absolute;
-  left:0%;
-  top:780px;
-  width: 100%;
-  height: 600px;
-  z-index: 1;
-  background-size: cover;
-}
-
-
-.mumchan-main .footer {
-  background: #FFFFFF;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 26px;
-  width: 1445px;
-  box-sizing: border-box;
-}
-
-.mumchan-main .footer-1 {
-  margin: 0 69.5px 0 67px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 1308.5px;
-  box-sizing: border-box;
-}
-
-.mumchan-main .mumchan-logo-1 {
-  margin-right: 30px;
-  width: 1075px;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 800;
-  font-size: 40px;
-  color: #000000;
-}
-
-.mumchan-main .sns {
-  margin: 20px 0 16px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 203.5px;
-  height: fit-content;
-  box-sizing: border-box;
-}
-
-.mumchan-main .social-icons {
-  width: 24px;
-  height: 24px;
-}
-
-.mumchan-main .social-icons-1 {
-  margin-bottom: 0.1px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 24px;
-  height: 23.9px;
-  box-sizing: border-box;
-}
-
-.mumchan-main .social-icons-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 23.5px;
-  height: 24px;
-  box-sizing: border-box;
-}
-
-.mumchan-main .social-icons-3 {
-  margin: 3.6px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 24px;
-  height: 16.9px;
-  box-sizing: border-box;
-}
-
-
-.mumchan-main .footer2 {
-  background: #000000;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 21px 1.6px 21px 0;
-  width: 1445px;
-  box-sizing: border-box;
-}
-
-.mumchan-main .copyright-2024-all-rights-reserved-mumchan {
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 12px;
-  color: #FFFFFF;
-}
-
-
-
-.mumchan-main .line-02 {
-  background: #000000;
-  margin-bottom: 16.5px;
-  width: 1440px;
-  height: 1px;
-}
-.mumchan-main .line-01 {
-  background: #000000;
-  width: 1440px;
-  height: 1px;
-}
-.mumchan-main .container-12 {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: #FFFFFF;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3px 12.9px 3px 12px;
-  box-sizing: border-box;
-}
-.mumchan-main .number-1 {
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .container-14 {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: #FFFFFF;
-  position: absolute;
-  left: 240px;
-  top: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3px 10.8px 3px 10px;
-  box-sizing: border-box;
-}
-.mumchan-main .container-15 {
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .container-16 {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: #FFFFFF;
-  position: absolute;
-  left: 480px;
-  top: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3px 10.6px 3px 10px;
-  box-sizing: border-box;
-}
-.mumchan-main .container-17 {
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .container-18 {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: #FFFFFF;
-  position: absolute;
-  top: 0px;
-  right: 411px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3px 9.9px 3px 10px;
-  box-sizing: border-box;
-}
-.mumchan-main .container-19 {
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .container-20 {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: #FFFFFF;
-  position: absolute;
-  top: 0px;
-  right: 171px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3px 10px;
-  box-sizing: border-box;
-}
-.mumchan-main .container-21 {
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .container-7 {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: #FFFFFF;
-  position: absolute;
-  left: 239px;
-  bottom: 284px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3px 10.3px 3px 11px;
-  box-sizing: border-box;
-}
-.mumchan-main .number-7 {
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .container-8 {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: #FFFFFF;
-  position: absolute;
-  left: 479px;
-  bottom: 284px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3px 9.9px 3px 10px;
-  box-sizing: border-box;
-}
-.mumchan-main .number-8 {
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .container-9 {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: #FFFFFF;
-  position: absolute;
-  right: 411px;
-  bottom: 284px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3px 9.9px 3px 10px;
-  box-sizing: border-box;
-}
-.mumchan-main .number-9 {
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .container-10 {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: #FFFFFF;
-  position: absolute;
-  right: 171px;
-  bottom: 284px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3px 7.8px 3px 7px;
-  box-sizing: border-box;
-}
-.mumchan-main .number-10 {
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .container-6 {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: #FFFFFF;
-  position: absolute;
-  left: 0px;
-  bottom: 284px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3px 9.8px 3px 10px;
-  box-sizing: border-box;
-}
-.mumchan-main .container-31 {
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
-}
-.mumchan-main .navigation {
-  margin-bottom: 75px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1440px;
-  box-sizing: border-box;
-}
-.mumchan-main .header {
-  background: #FFFFFF;
-  position: relative;
-  margin-bottom: 0.5px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-bottom: 33px;
-  box-sizing: border-box;
-  width: 100%;
-    max-width: 1800px;
-    min-width: 320px;
-    justify-content: center;
-    
-
-    
-}
-.mumchan-main .hero {
-  position: relative;
-  margin: 0 1.5px 857px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0 47.9px 32px 49.3px;
-  box-sizing: border-box;
-}
-
-
-
 .mumchan-main .recipe-categories-1 {
   
-  padding: 20px 133px 123px 125px;
+  padding: 20px 133px 123px 110px;
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -1598,67 +638,90 @@
 }
 
 
-.mumchan-main .container {
-  margin: 0 83px 33px 63px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 808px;
-    box-sizing: border-box;
-    }
 
-.mumchan-main .container-1 {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background: #FFFFFF;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 3px 9.8px 3px 10px;
-    box-sizing: border-box;
-}
-.mumchan-main .container-2 {
-  margin-bottom: 34px;
+
+
+
+
+.mumchan-main .footer {
+  background: #FFFFFF;
+  position: relative;
   display: flex;
-  flex-direction: row;
-  column-gap: 40px;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.mumchan-main .container-3 {
-  display: flex;
-  flex-direction: row;
-  column-gap: 40px;
-  width: 1160px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  width: 100%;
   box-sizing: border-box;
 }
 
-.mumchan-main .container-5 {
-  margin-bottom: 25px;
+.mumchan-main .footer-1 {
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+  padding: 30px 60px;
+}
+
+.mumchan-main .mumchan-logo-1 {
+  margin-right: 30px;
+  width: 1075px;
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 40px;
+  color: #000000;
+}
+
+.mumchan-main .sns {
+  margin: 20px 0 16px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-self: flex-start;
-  width: 1159.7px;
+  width: 203.5px;
+  height: fit-content;
   box-sizing: border-box;
 }
 
-.mumchan-main .vector-3 {
+.mumchan-main .sns-facebook {
   width: 24px;
-  height: 23.9px;
-}
-.mumchan-main .vector-4 {
-  width: 23.5px;
   height: 24px;
 }
-.mumchan-main .vector-9 {
+
+.mumchan-main .sns-instagram {
   width: 24px;
-  height: 16.9px;
+  height: 24px;
 }
 
+.mumchan-main .sns-youtube {
+  width: 24px;
+  height: 24px;
+}
 
+.mumchan-main .sns-google {
+  width: 24px;
+  height: 24px;
+}
+
+.mumchan-main .footer-2 {
+  background: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mumchan-main .copyright {
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFFFF;
+}
 
 
 
