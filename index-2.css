@@ -427,7 +427,7 @@ font-weight: bold;
     font-weight: bold;
 }
 
-#final-image-upload
+#label-label
 {
     font-size: 18px;
     font-weight: bold;
@@ -564,7 +564,7 @@ button:hover {
 .button-container-image {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 20px;
   margin-top: 20px;
 }
 
