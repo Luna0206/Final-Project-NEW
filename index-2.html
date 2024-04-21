@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUMCHAN - Best Korean Recipes-submit form</title>
+  <link rel="stylesheet" href="index-2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+
+<div class="mumchan-main">
+  <div class="header">
+    <div class="strap">
+    </div>
+    <div class="header-container">
+      <div class="head-logo">
+        <span class="logo-mumchan">
+          MUMCHAN
+        </span>
+        <span class="small-logo">
+          best korean recipes
+        </span>
+      </div>
+      <div class="login-sign-up">
+        Login / SignUp
+      </div>
+    </div>
+    <div class="search-container">
+      <input type="search" placeholder="Search">
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="line-02">
+    </div>
+    <div class="nav-menu">
+      <span class="home">
+        Home
+      </span>
+      <span class="best-recipes">
+        Best recipes
+      </span>
+      <span class="korean-recipes">
+        Korean Recipes
+      </span>
+      <span class="submit-my-recipes">
+        Submit my recipes
+      </span>
+      <span class="about-us">
+        About us
+      </span>
+    </div>
+    <div class="line-01">
+    </div>
+  </div>
+  <body>
+    <!--여기서부터-->
+   
+      <div class="recipe-registration-form">
+        <h3>Recipe Registration</h3>
+        <form id="recipe-form">
+          <div class="section-firstpart">
+          <div class="section">          
+          <label for="recipe-title" id="recipe-title-label">Recipe Title</label>
+          <br>
+          <input type="text" id="recipe-title" name="recipe-title" placeholder="Ex) Jeyuk Bokkeum (Spicy Pork Bulgogi)">
+</div>
+<div class="section">
+          <label for="cooking-introduction" id="cooking-introduction-label">Cooking Introduction</label>
+          <textarea id="cooking-introduction" name="cooking-introduction"
+                placeholder="Please write the origin story of this recipe."></textarea>
+</div>
+<div class="section dropdown-container">
+  <label for="category" id="category-label">Category</label>
+  <br>
+  <select id="category" name="category">
+    <option value="main">Main Dish</option>
+    <option value="side">Side Dish</option>
+    <option value="soup">Soup / Stew</option>
+    <option value="special">Special Event</option>
+    <option value="rice">Rice</option>
+    <option value="noodle">Noodles</option>
+    <option value="vegetables">Vegetables</option>
+    <option value="desserts">Desserts</option>
+  </select>
+</div>
+  </div>
+      
+
+
+      <div class="section-ingredients">
+        <label for="Ingrdients-information" id="ingredients-info-label">Ingredients Information</label>
+        <div class="ingredient-fields">
+          <input type="text" placeholder="Ex) Pork mince" name="ingredient">
+          <input type="text" placeholder="Ex) 500g (Amount)" name="amount">
+        </div>
+        <div class="ingredient-fields">
+          <input type="text" placeholder="Ex) Pork mince" name="ingredient">
+          <input type="text" placeholder="Ex) 500g (Amount)" name="amount">
+        </div>
+        <div class="ingredient-fields">
+          <input type="text" placeholder="Ex) Pork mince" name="ingredient">
+          <input type="text" placeholder="Ex) 500g (Amount)" name="amount">
+        </div>
+        <div class="button-container">
+          <button type="button" id="add-more" class="add-more">+ Add More</button>
+        </div>
+      </div>
+
+
+    
+
+      <div class="section steps">
+        <label for="step-description" id="step-description-label">Cooking Steps</label>
+        <p>Please make sure to include every crucial detail that can affect the taste of the dish. <br>
+        Example) Simmer for 10 minutes ➜ Simmer over low heat for 10 minutes.<br>
+        Cook the garlic slices ➜ Make sure to cook the garlic slices thoroughly to remove the spiciness.<br>
+        Add a bit of honey ➜ If you don't have honey, you can substitute it with 1 spoonful of sugar.</p>
+      
+    
+        <div class="step-container">
+          <div class="step">
+            <textarea id="step-description" name="step-description" 
+            placeholder="Ex) Please trim the fat from the beef and slice it into 2cm by 2cm pieces, both horizontally and vertically."></textarea>
+            
+
+            <div class="image-upload-container">
+              <input type="file" id="file-upload" style="display: none;" />
+              <img id="uploaded-image" style="display: none;" />
+              <button type="button" id="upload-button" onclick="document.getElementById('file-upload').click();">+ Upload
+                Image</button>
+            </div>
+
+          </div>
+          <button type="button" class="add-step">+ Add Step</button>
+        </div>
+      </div>
+
+
+  <div class="section-final-image">
+    <label id="label-label">Upload Final Dish Image</label>
+  
+    <div class="button-container-image">
+    
+
+      <button type="button" class="upload-image">+ Upload Image</button>
+      <button type="button" class="upload-image">+ Upload Image</button>
+      <button type="button" class="upload-image">+ Upload Image</button>
+      <button type="button" class="upload-image">+ Upload Image</button>
+      <button type="button" class="upload-image">+ Upload Image</button>
+      <button type="button" class="upload-image">+ Upload Image</button>
+    </div>
+  
+  </div>
+
+
+      
+
+
+
+      <div class="section-tag">
+        <label for="tags" id="tags-label">Add Tag</label>
+        <br>
+        <input type="text" id="tags" name="tags" placeholder="Ex) #tangsuyuk">
+      </div>
+
+      
+      <div class="form-actions">
+        <button type="button" class="submit" onclick="submitForm()">Submit</button>
+        <button type="button" class="cancel" onclick="resetForm()">Cancel</button>
+      </div>
+      </form>
+      </div>
+
+
+      <!--modal-->
+    
+    <div id="submitModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Thanks for your submission!</p>
+      </div>
+    </div>
+
+    
+     
+      <script>
+       // 'Submit' 버튼 클릭시 모달 표시 코드
+        function submitForm() {
+          var title = document.getElementById('recipe-title').value;
+          var introduction = document.getElementById('cooking-introduction').value;
+          var category = document.getElementById('category').value;
+          var tags = document.getElementById('tags').value;
+          var isValid = true; // 이 값을 true로 초기화합니다.
+          var messages = [];
+
+          if (!title || title.length <= 1) {
+            messages.push('The recipe title must be more than 1 letter.');
+            isValid = false;
+          }
+
+          if (!introduction.trim()) {
+            messages.push('Cooking introduction cannot be empty.');
+            isValid = false;
+          }
+
+          if (!category) {
+            messages.push('Please select a category.');
+            isValid = false;
+          }
+
+          if (!tags.trim()) {
+            messages.push('Please add at least one tag.');
+            isValid = false;
+          }
+
+          if (isValid) {
+            // 유효성 검사를 통과한 경우에만 모달을 표시합니다.
+            var modal = document.getElementById('submitModal');
+            modal.style.display = 'block';
+          } else {
+            // 유효성 검사를 통과하지 못한 경우 오류 메시지를 표시합니다.
+            alert(messages.join('\n'));
+          }
+
+          // 실제 서브미션을 방지하기 위해 false를 반환합니다.
+          return false;
+        }
+
+        function resetForm() {
+          document.getElementById('recipe-form').reset();
+          var modal = document.getElementById('submitModal');
+          modal.style.display = 'none'; // 모달을 닫습니다.
+        }
+
+        // 모달의 닫기 버튼과 바깥 클릭 이벤트 처리
+        document.addEventListener('DOMContentLoaded', function () {
+          var span = document.getElementsByClassName('close')[0];
+          span.onclick = function () {
+            var modal = document.getElementById('submitModal');
+            modal.style.display = 'none';
+          };
+
+          window.onclick = function (event) {
+            var modal = document.getElementById('submitModal');
+            if (event.target === modal) {
+              modal.style.display = 'none';
+            }
+          };
+        });
+
+          
+        
+//add more.
+        document.addEventListener('DOMContentLoaded', function () {
+            var addButton = document.querySelector('.add-more'); // 'Add More' 버튼을 선택합니다.
+            var container = document.querySelector('.section-ingredients'); // 입력 필드를 담을 컨테이너를 선택합니다.
+            var buttonContainer = document.querySelector('.button-container'); // 버튼이 담긴 컨테이너를 선택합니다.
+
+            addButton.addEventListener('click', function () {
+              var newIngredient = document.createElement('div');
+              newIngredient.classList.add('ingredient-fields');
+
+              var inputIngredient = document.createElement('input');
+              inputIngredient.type = 'text';
+              inputIngredient.placeholder = 'Ex) Pork mince';
+              inputIngredient.name = 'ingredient';
+
+              var inputAmount = document.createElement('input');
+              inputAmount.type = 'text';
+              inputAmount.placeholder = 'Ex) 500g (Amount)';
+              inputAmount.name = 'amount';
+
+              newIngredient.appendChild(inputIngredient);
+              newIngredient.appendChild(inputAmount);
+
+              container.insertBefore(newIngredient, buttonContainer);
+            });
+
+//add step.
+         document.addEventListener('DOMContentLoaded', function () {
+            // 'Add Step' 버튼을 찾습니다.
+            var addStepButton = document.querySelector('.add-step');
+
+            alert("test") 
+
+            // 'Add Step' 버튼에 이벤트 리스너를 추가합니다.
+            addStepButton.addEventListener('click', function () {
+              // 새로운 단계 입력 요소를 만듭니다.
+              var newStepDiv = document.createElement('div');
+              newStepDiv.classList.add('step');
+
+              var newTextArea = document.createElement('textarea');
+              newTextArea.setAttribute('name', 'step-description');
+              newTextArea.setAttribute('placeholder', 'Ex) Please trim the fat from the beef and slice it into 2cm by 2cm pieces, both horizontally and vertically.');
+
+              var newButton = document.createElement('button');
+              newButton.setAttribute('type', 'button');
+              newButton.classList.add('upload-image');
+              newButton.textContent = '+ Upload Image';
+
+              newStepDiv.appendChild(newTextArea);
+              newStepDiv.appendChild(newButton);
+
+              // 단계 설명 입력 필드를 담고 있는 '.section.steps' 요소를 찾습니다.
+              var stepsSection = document.querySelector('.section.steps');
+
+              // 'Add Step' 버튼의 바로 전에 새로운 단계 입력 요소를 삽입합니다.
+              stepsSection.appendChild(newStepDiv, addStepButton);
+            });
+          });
+
+          //upload image
+         
+          // 파일 input 요소에 이벤트 리스너를 추가합니다.
+          document.getElementById('file-upload').addEventListener('change', function (event) {
+            var files = event.target.files;
+            if (files.length > 0) {
+              var fileReader = new FileReader();
+
+              fileReader.onload = function (e) {
+                // 업로드된 이미지를 표시합니다.
+                var uploadedImage = document.getElementById('uploaded-image');
+                uploadedImage.src = e.target.result;
+                uploadedImage.style.display = 'block';
+
+                // 이미지가 로드되면 'Upload Image' 버튼을 숨깁니다.
+                var uploadButton = document.getElementById('upload-button');
+                uploadButton.style.display = 'none';
+              };
+
+              // 파일 리더로 이미지 파일을 읽습니다.
+              fileReader.readAsDataURL(files[0]);
+            }
+          });
+
+          //upload final dish image
+
+
+
+//modal
+          // 'Submit' 버튼을 클릭했을 때 모달을 보이게 하는 코드
+          function submitForm() {
+            // ... 기존 코드 ...
+
+            // 모달을 표시하는 코드
+            var modal = document.getElementById('submitModal');
+            modal.style.display = 'block';
+
+            // 모달을 닫는 코드
+            var span = document.getElementsByClassName('close')[0];
+            span.onclick = function () {
+              modal.style.display = 'none';
+            };
+
+            // Prevent actual submission for demonstration purposes
+            return false;
+          }
+
+          // 모달 바깥 부분을 클릭했을 때 모달을 닫는 기능
+          window.onclick = function (event) {
+            var modal = document.getElementById('submitModal');
+            if (event.target == modal) {
+              modal.style.display = 'none';
+            }
+          };
+
+
+
+          
+
+          
+
+
+
+          });
+
+          
+
+
+      </script>
+    </body>
+    
+
+        <div class="footer">
+          <div class="footer-1">
+            <span class="mumchan-logo-1">
+              MUMCHAN
+            </span>
+            <div class="sns">
+              <img class="sns-instagram" src="images/instagram.svg" />
+              <img class="sns-facebook" src="images/facebook.svg" />
+              <img class="sns-youtube" src="images/youtube.svg" />
+              <img class="sns-google" src="images/google.svg" />
+            </div>
+          </div>
+          <div class="footer-2">
+            <span class="copyright">
+              COPYRIGHT 2024 ALL RIGHTS RESERVED MUMCHAN
+            </span>
+          </div>
+        </div>
+    </div>
+  </body>
+  
+  </html>
+
+  
