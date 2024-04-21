@@ -141,15 +141,7 @@
   <div class="section-final-image">
     <label id="label-label">Upload Final Dish Image</label>
   
-    <div class="button-container-image">
-    
-
-      <button type="button" class="upload-image">+ Upload Image</button>
-      <button type="button" class="upload-image">+ Upload Image</button>
-      <button type="button" class="upload-image">+ Upload Image</button>
-      <button type="button" class="upload-image">+ Upload Image</button>
-      <button type="button" class="upload-image">+ Upload Image</button>
-      <button type="button" class="upload-image">+ Upload Image</button>
+    <div class="button-container-image" id="final-image-upload-container">
     </div>
   
   </div>
@@ -329,7 +321,55 @@
           });
 
           //upload final dish image
+          for (let i = 1; i < 7; i++) {
+            const prefix = 'upload-final-dish-';
+            const inputFile = document.createElement('input');
+            inputFile.id = prefix + i;
+            inputFile.type = 'file';
+            inputFile.style.display = 'none';
+            inputFile.addEventListener('change', handleImageUpload);
 
+            const imgTag = document.createElement('img');
+            imgTag.id = prefix + i + '-image';
+            imgTag.style.display = 'none';
+
+            const uploadFinalImageButton = document.createElement('button');
+            uploadFinalImageButton.id = prefix + i + '-button';
+            uploadFinalImageButton.classList += 'upload-image';
+            uploadFinalImageButton.onclick = function (e) {
+              e.preventDefault();
+              inputFile.click();
+            }
+            uploadFinalImageButton.innerHTML = '+ Upload Image';
+
+            // document.getElementById('upload-final-dish-' + i).addEventListener('change', handleImageUpload);
+
+            const finalImageContainer = document.getElementById('final-image-upload-container');
+            finalImageContainer.appendChild(inputFile);
+            finalImageContainer.appendChild(imgTag);
+            finalImageContainer.appendChild(uploadFinalImageButton)
+          }
+          function handleImageUpload(event) {
+            var files = event.target.files;
+            if (files.length > 0) {
+              var fileReader = new FileReader();
+
+              fileReader.onload = function (e) {
+                // 업로드된 이미지를 표시합니다.
+                var uploadedImage = document.getElementById(event.target.id + '-image');
+                uploadedImage.src = e.target.result;
+                uploadedImage.style.display = 'block';
+                uploadedImage.style.width = '200px';
+
+                // 이미지가 로드되면 'Upload Image' 버튼을 숨깁니다.
+                var uploadButton = document.getElementById(event.target.id + '-button');
+                uploadButton.style.display = 'none';
+              };
+
+              // 파일 리더로 이미지 파일을 읽습니다.
+              fileReader.readAsDataURL(files[0]);
+            }
+          }
 
 
 //modal
