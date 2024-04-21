@@ -278,14 +278,8 @@
               container.insertBefore(newIngredient, buttonContainer);
             });
 
-//add step.
-         document.addEventListener('DOMContentLoaded', function () {
-            // 'Add Step' 버튼을 찾습니다.
-            var addStepButton = document.querySelector('.add-step');
-
-            alert("test") 
-
             // 'Add Step' 버튼에 이벤트 리스너를 추가합니다.
+            var addStepButton = document.querySelector('.add-step');
             addStepButton.addEventListener('click', function () {
               // 새로운 단계 입력 요소를 만듭니다.
               var newStepDiv = document.createElement('div');
@@ -304,12 +298,11 @@
               newStepDiv.appendChild(newButton);
 
               // 단계 설명 입력 필드를 담고 있는 '.section.steps' 요소를 찾습니다.
-              var stepsSection = document.querySelector('.section.steps');
+              var stepContainer = document.querySelector('.step-container');
 
               // 'Add Step' 버튼의 바로 전에 새로운 단계 입력 요소를 삽입합니다.
-              stepsSection.appendChild(newStepDiv, addStepButton);
+              stepContainer.insertBefore(newStepDiv, addStepButton);
             });
-          });
 
           //upload image
          
