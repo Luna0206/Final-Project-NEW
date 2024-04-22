@@ -1,0 +1,374 @@
+/*head*/
+.mumchan-main {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.mumchan-main .header {
+  background: #FFFFFF;
+  position: relative;
+  margin-bottom: 0.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 33px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1800px;
+  min-width: 320px;
+  justify-content: center;
+}
+
+.mumchan-main .strap {
+  background: #000000;
+  width: 100%;
+  height: 40px;
+}
+
+.mumchan-main .header-container {
+  margin: 0 133px 33px 63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 700px;
+  box-sizing: border-box;
+}
+
+.mumchan-main .head-logo {
+  background: #000000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0.9px 30px 0;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.mumchan-main .logo-mumchan {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 40px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.mumchan-main .small-logo {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  translate: -50% 0;
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.mumchan-main .logo-mumchan,
+.mumchan-main .small-logo {
+  text-align: center;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+.mumchan-main .login-sign-up {
+  margin: 45px 0px 34px 0px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--poppin-14-font-family, 'Poppins');
+  font-weight: var(--poppin-14-font-weight, 400);
+  font-size: var(--poppin-14-font-size, 14px);
+  color: #000000;
+}
+
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.search-container input[type="search"] {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.mumchan-main .navigation {
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mumchan-main .nav-menu {
+  margin: 17px 0 17px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 100px 0 100px;
+}
+
+.nav-menu.active {
+  transform: translateY(0);
+  opacity: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.mumchan-main .line-02,
+.mumchan-main .line-01 {
+  background: #000000;
+  width: 100%;
+  height: 1px;
+}
+
+.mumchan-main .home a,
+.mumchan-main .best-recipes a,
+.mumchan-main .korean-recipes a,
+.mumchan-main .submit-my-recipes a,
+.mumchan-main .about-us a {
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.mumchan-main .home a:hover,
+.mumchan-main .best-recipes a:hover,
+.mumchan-main .korean-recipes a:hover,
+.mumchan-main .submit-my-recipes a:hover,
+.mumchan-main .about-us a:hover {
+  color: #4a3bb7;
+}
+
+
+.mumchan-main .home a:active,
+.mumchan-main .best-recipes a:active,
+.mumchan-main .korean-recipes a:active,
+.mumchan-main .submit-my-recipes a:active,
+.mumchan-main .about-us a:active {
+  color: #AB2D2D;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+
+.hamburger-menu .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+}
+
+/*footer*/
+.mumchan-main .footer {
+  background: #FFFFFF;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mumchan-main .footer-1 {
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+  padding: 30px 60px;
+}
+
+.mumchan-main .mumchan-logo-1 {
+  margin-right: 30px;
+  width: 1075px;
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 40px;
+  color: #000000;
+}
+
+.mumchan-main .sns {
+  margin: 20px 0 16px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 203.5px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+.mumchan-main .sns-facebook {
+  width: 24px;
+  height: 24px;
+}
+
+.mumchan-main .sns-instagram {
+  width: 24px;
+  height: 24px;
+}
+
+.mumchan-main .sns-youtube {
+  width: 24px;
+  height: 24px;
+}
+
+.mumchan-main .sns-google {
+  width: 24px;
+  height: 24px;
+}
+
+.mumchan-main .footer-2 {
+  background: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mumchan-main .copyright {
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+
+
+
+/* 미디어 쿼리 */
+@media (max-width: 768px) {
+
+  .mumchan-main .header,
+  .mumchan-main .header-container,
+  .mumchan-main .nav-menu,
+  .mumchan-main .navigation {
+    flex-direction: column;
+  }
+
+  .mumchan-main .header-container,
+  .mumchan-main .nav-menu {
+    margin: 0 20px;
+    width: auto;
+    padding: 0;
+  }
+
+  .mumchan-main .search-container input[type="search"] {
+    width: 70%;
+
+  }
+
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .nav-menu span {
+    display: none;
+  }
+
+  .nav-menu.active span {
+    display: block;
+    padding: 10px;
+  }
+
+  .mumchan-main .our-best-recipe-1,
+  .mumchan-main .container-recipe-title,
+  .recipes-container {
+    padding: 0 15px;
+    justify-content: center;
+  }
+
+
+  .menu-card {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px;
+  }
+
+  .mumchan-main .recipe-categories-1 {
+
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mumchan-main .category {
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mumchan-main .category-item {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mumchan-main .category-item span {
+    font-size: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .mumchan-main .category {
+    flex-direction: row;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mumchan-main .category-item {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mumchan-main .category-item span {
+    font-size: 8px;
+  }
+}
