@@ -29,7 +29,7 @@
 }
 
 .mumchan-main .header-container {
-  margin: 0 83px 33px 63px;
+  margin: 0 133px 33px 63px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -79,6 +79,15 @@
   color: #FFFFFF;
 }
 
+.mumchan-main .login-sign-up {
+  margin: 45px 0px 34px 0px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--poppin-14-font-family, 'Poppins');
+  font-weight: var(--poppin-14-font-weight, 400);
+  font-size: var(--poppin-14-font-size, 14px);
+  color: #000000;
+}
 
 
 .search-container {

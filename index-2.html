@@ -35,17 +35,14 @@
     <div class="line-02">
     </div>
     <div class="nav-menu">
-      <span class="home">
-        Home
-      </span>
+      <span class="home"><a href="index.html">Home</a></span>
       <span class="best-recipes">
         Best recipes
       </span>
       <span class="korean-recipes">
         Korean Recipes
       </span>
-      <span class="submit-my-recipes">
-        Submit my recipes
+      <span class="submit-my-recipes"><a href="index-2.html">Submit my recipes</a>
       </span>
       <span class="about-us">
         About us
@@ -359,7 +356,8 @@
                 var uploadedImage = document.getElementById(event.target.id + '-image');
                 uploadedImage.src = e.target.result;
                 uploadedImage.style.display = 'block';
-                uploadedImage.style.width = '200px';
+                uploadedImage.style.width = '167px';
+                uploadedImage.style.height = '200px';
 
                 // 이미지가 로드되면 'Upload Image' 버튼을 숨깁니다.
                 var uploadButton = document.getElementById(event.target.id + '-button');
