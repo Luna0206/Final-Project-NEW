@@ -476,11 +476,8 @@ select {
   font-size: 16px;
   color: #000;
   -webkit-appearance: none;
-  /* 웹킷 브라우저 기본 스타일 제거 */
   -moz-appearance: none;
-  /* 모질라 브라우저 기본 스타일 제거 */
   appearance: none;
-  /* 표준 준수를 위한 기본 스타일 제거 */
   background-color: white;
 }
 
@@ -489,7 +486,6 @@ select {
 .dropdown-container {
   position: relative;
   display: block;
-  /* 필요에 따라 flex를 block으로 변경할 수 있음 */
   width: 100%;
   background-color:transparent;
 }
