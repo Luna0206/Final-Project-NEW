@@ -7,48 +7,58 @@
   width: 100vw;
   box-sizing: border-box;
 }
-
 .mumchan-main .header {
   background: #FFFFFF;
   position: relative;
   margin-bottom: 0.5px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  /* 수정: 헤더의 로고가 중앙에 오도록 align-items 설정 */
   padding-bottom: 33px;
   box-sizing: border-box;
   width: 100%;
   max-width: 1800px;
   min-width: 320px;
-  justify-content: center;
 }
 
 .mumchan-main .strap {
   background: #000000;
   width: 100%;
   height: 40px;
+  display: flex;
+  /* 추가: 스트랩 내부 요소를 flex로 만듬 */
+  justify-content: flex-end;
+  /* 추가: 오른쪽에 로그인/회원가입 버튼을 배치 */
+  align-items: center;
+  /* 추가: 세로 중앙 정렬 */
+  padding-right: 20px;
+  /* 추가: 오른쪽 패딩 추가 */
 }
 
 .mumchan-main .header-container {
-  margin: 0 133px 33px 63px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 700px;
+  justify-content: center;
+  /* 수정: 컨테이너 내부 요소를 중앙에 정렬 */
+  width: 100%;
+  /* 수정: 컨테이너의 너비를 100%로 확장 */
+  margin: 0;
+  /* 수정: 마진 제거 */
   box-sizing: border-box;
 }
 
 .mumchan-main .head-logo {
   background: #000000;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 0.9px 30px 0;
+  padding: 10px 0;
   width: 300px;
+  /* 로고의 너비 */
   box-sizing: border-box;
 }
+
 
 .mumchan-main .logo-mumchan {
   position: relative;
@@ -81,13 +91,13 @@
 }
 
 .mumchan-main .login-sign-up {
-  margin: 45px 0px 34px 0px;
+  margin: 0px 60px;
   display: inline-block;
   overflow-wrap: break-word;
-  font-family: var(--poppin-14-font-family, 'Poppins');
-  font-weight: var(--poppin-14-font-weight, 400);
-  font-size: var(--poppin-14-font-size, 14px);
-  color: #000000;
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
 }
 
 
@@ -95,7 +105,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 40px;
   width: 100%;
 }
 
@@ -272,7 +282,7 @@
 
 
 /* 미디어 쿼리 */
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
 
   .mumchan-main .header,
   .mumchan-main .header-container,
@@ -293,7 +303,6 @@
 
   }
 
-
   .hamburger-menu {
     display: flex;
   }
@@ -307,6 +316,25 @@
     padding: 10px;
   }
 
+  .mumchan-main .hero {
+   height: 80vh;
+        }
+    
+  .mumchan-main .hero-text {
+   padding: 8px 8px 80px;
+   flex: 0 0 80px;
+        }
+    
+ 
+    
+  .mumchan-main .hero-text h1 {
+  font-size: 2.5rem;
+  }
+    
+  .mumchan-main .hero-text p {
+  font-size: 1.5rem;
+  }
+
   .mumchan-main .our-best-recipe-1,
   .mumchan-main .container-recipe-title,
   .recipes-container {
@@ -314,10 +342,8 @@
     justify-content: center;
   }
 
-
-  .menu-card {
-    width: 100%;
-    max-width: 200px;
+  .mumchan-main.menu-card {
+    width: calc(50% - 10px);
     margin: 10px;
   }
 
@@ -348,27 +374,129 @@
   .mumchan-main .category-item span {
     font-size: 10px;
   }
+  
+  .mumchan-main .recently-viewed-section {
+  padding: 10px 20px;
+  
+  }
+
+    .mumchan-main .item-container {
+      justify-content: center;
+    }
 }
 
 
+
+
+ 
+
+ 
+
 @media (max-width: 480px) {
+
+  .mumchan-main .header,
+    .mumchan-main .header-container,
+    .mumchan-main .nav-menu,
+    .mumchan-main .navigation {
+      flex-direction: column;
+    }
+  
+    .mumchan-main .header-container,
+    .mumchan-main .nav-menu {
+      margin: 0 20px;
+      width: auto;
+      padding: 0;
+      
+    }
+  
+    .mumchan-main .search-container input[type="search"] {
+      width: 80%;
+    }
+  
+    .hamburger-menu {
+      display: flex;
+    }
+  
+    .nav-menu span {
+      display: none;
+    }
+  
+    .nav-menu.active span {
+      display: block;
+      padding: 10px;
+    }
+
+
+ .mumchan-main .hero {
+   height: 70vh;
+ }
+
+ .mumchan-main .hero-text {
+   padding: 5px 5px 50px;
+   flex: 0 0 60px;
+ }
+
+
+
+ .mumchan-main .hero-text h1 {
+   font-size: 2.25rem;
+ }
+
+ .mumchan-main .hero-text p {
+   font-size: 1.25rem;
+ }
+    .mumchan-main .our-best-recipe-1,
+    .mumchan-main .container-recipe-title,
+    .recipes-container {
+      padding: 0 15px;
+      justify-content: center;
+    }
+
+  .mumchan-main .recipe-categories-1 {
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
 
   .mumchan-main .category {
     flex-direction: row;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .mumchan-main .category-item {
-    height: 60px;
-    width: 60px;
-    display: flex;
-    justify-content: center;
     align-items: center;
   }
 
-  .mumchan-main .category-item span {
-    font-size: 8px;
+  .mumchan-main .category-item {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
+
+  .mumchan-main .category-item span {
+    font-size: 14px;
+  }
+
+ .mumchan-main .recently-viewed-section {
+  padding: 10px 20px;
+  }
+
+     .mumchan-main .item-container {
+       justify-content: center;
+     }
+  
+    .mumchan-main.menu-card {
+      width: 80%;
+      max-width: none;
+      margin: 5px;
+    }
+
+
+
+  
 }
