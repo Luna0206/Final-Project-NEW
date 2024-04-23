@@ -33,8 +33,16 @@ document.addEventListener('DOMContentLoaded', function () {
     addStepButton.addEventListener('click', function () {
         var newStepDiv = document.createElement('div');
         newStepDiv.classList.add('step');
-        newStepDiv.innerHTML = `<textarea name="step-description" placeholder="Ex) Please trim the fat from the beef and slice it into 2cm by 2cm pieces, both horizontally and vertically."></textarea>
-                                <button type="button" class="upload-image">+ Upload Image</button>`;
+        newStepDiv.innerHTML = `<textarea id="step-description" name="step-description" 
+            placeholder="Ex) Please trim the fat from the beef and slice it into 2cm by 2cm pieces, both horizontally and vertically."></textarea>
+            
+
+            <div class="image-upload-container">
+              <input type="file" id="file-upload" style="display: none;" />
+              <img id="uploaded-image" style="display: none;" />
+              <button type="button" id="upload-button" onclick="document.getElementById('file-upload').click();">+ Upload
+                Image</button>
+            </div>`;
         stepContainer.insertBefore(newStepDiv, addStepButton);
     });
 
