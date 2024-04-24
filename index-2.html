@@ -66,12 +66,12 @@
       <div class="section">          
       <label for="recipe-title" id="recipe-title-label">Recipe Title</label>
       <br>
-      <input type="text" id="recipe-title" name="recipe-title" placeholder="Ex) Jeyuk Bokkeum (Spicy Pork Bulgogi)">
+      <input type="text" id="recipe-title" name="recipe-title" placeholder="Ex) Jeyuk Bokkeum (Spicy Pork Bulgogi)" required>
       </div>
       <div class="section">
           <label for="cooking-introduction" id="cooking-introduction-label">Cooking Introduction</label>
           <textarea id="cooking-introduction" name="cooking-introduction"
-                placeholder="Please write the origin story of this recipe."></textarea>
+                placeholder="Please write the origin story of this recipe." required></textarea>
       </div>
       <div class="section dropdown-container">
        <label for="category" id="category-label">Category</label>
@@ -88,14 +88,12 @@
      </select>
      </div>
       </div>
-      
-
 
       <div class="section-ingredients">
         <label for="Ingrdients-information" id="ingredients-info-label">Ingredients Information</label>
         <div class="ingredient-fields">
-          <input type="text" placeholder="Ex) Pork mince" name="ingredient">
-          <input type="text" placeholder="Ex) 500g (Amount)" name="amount">
+          <input type="text" placeholder="Ex) Pork mince" name="ingredient" required>
+          <input type="text" placeholder="Ex) 500g (Amount)" name="amount" required>
         </div>
         <div class="ingredient-fields">
           <input type="text" placeholder="Ex) Pork mince" name="ingredient">
@@ -110,9 +108,6 @@
         </div>
       </div>
 
-
-    
-
       <div class="section steps">
         <label for="step-description" id="step-description-label">Cooking Steps</label>
         <p>Please make sure to include every crucial detail that can affect the taste of the dish. <br>
@@ -124,7 +119,7 @@
         <div class="step-container">
           <div class="step">
             <textarea id="step-description" name="step-description" 
-            placeholder="Ex) Please trim the fat from the beef and slice it into 2cm by 2cm pieces, both horizontally and vertically."></textarea>
+            placeholder="Ex) Please trim the fat from the beef and slice it into 2cm by 2cm pieces, both horizontally and vertically." required></textarea>
             
 
             <div class="image-upload-container">
@@ -139,44 +134,25 @@
         </div>
       </div>
 
-
       <div class="section-final-image">
         <label id="label-label">Upload Final Dish Image</label>
         <div class="button-container-image" id="final-image-upload-container">
         </div>
       </div>
 
-
-      
-
-
-
       <div class="section-tag">
         <label for="tags" id="tags-label">Add Tag</label>
         <br>
-        <input type="text" id="tags" name="tags" placeholder="Ex) #tangsuyuk">
+        <input type="text" id="tags" name="tags" placeholder="Ex) #tangsuyuk" required>
       </div>
-
       
       <div class="form-actions">
-        <button type="button" class="submit" onclick="submitForm()">Submit</button>
-        <button type="button" class="cancel" onclick="resetForm()">Cancel</button>
+        <button type="submit" class="submit">Submit</button>
+        <button type="button" class="cancel">Cancel</button>
       </div>
       </form>
-      </div>
-
-
-      <!--modal-->
-    
-    <div id="submitModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Thanks for your submission!</p>
-      </div>
-    </div>
-
-    
-     
+      <p id="log"></p>
+      
       
     </body>
     
